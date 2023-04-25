@@ -1,0 +1,18 @@
+<h1>Task Details</h1>
+<div *ngIf="variables">
+  <strong>Task ID:</strong> {{ variables.taskId }}<br>
+  <strong>Task Name:</strong> {{ variables.taskName }}<br>
+  <strong>Task Assignee:</strong> {{ variables.taskAssignee }}<br>
+  <strong>Task Created Time:</strong> {{ variables.taskCreatedTime }}<br>
+  <strong>Task Due Date:</strong> {{ variables.taskDueDate }}<br>
+  <strong>Task Follow Up Date:</strong> {{ variables.taskFollowUpDate }}<br>
+  <strong>Task Last Updated Date:</strong> {{ variables.tasklastUpdatedDate }}<br>
+  <strong>Form Key:</strong> {{ variables.formKey }}<br>
+  <strong>Process Instance ID:</strong> {{ variables.processInstanceId }}<br>
+</div>
+<hr>
+<h2>Task Variables</h2>
+<div *ngIf="variables?.dataContext">
+
+</div>
+<div #formContainer></div>

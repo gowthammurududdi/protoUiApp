@@ -1,0 +1,4 @@
+<h1>Task Variables for Task ID: {{ taskId }}</h1>
+<div *ngFor="let variable of variables | keyvalue">
+  {{ variable.key }}: {{ variable.value }}
+</div>

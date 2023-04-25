@@ -1,0 +1,29 @@
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Assignee</th>   
+      <th>Created On</th>
+      <th>Due Date</th>
+      <th>Follow Up Date</th>
+      <th>Process Instance Id</th>
+
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let task of tasks">
+<td>
+        <a href="#" (click)="goToTaskVariables(task.id); $event.preventDefault()" class="task-link">{{ task.name }}</a>
+      </td>
+
+      <td>{{ task.id }}</td>
+      <td>{{ task.assignee }}</td>      
+      <td>{{ task.created }}</td>
+      <td>{{ task.due }}</td>
+      <td>{{ task.followUp }}</td>
+      <td>{{ task.processInstanceId }}</td>
+
+    </tr>
+  </tbody>
+</table>
